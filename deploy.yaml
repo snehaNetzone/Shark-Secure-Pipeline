@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: shark
-        image: docker6767/secureimage
+        image: docker6767/ssecureimage
         ports:
         - containerPort: 80
