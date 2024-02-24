@@ -1,8 +1,8 @@
 FROM node:10-alpine
 
-RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
+RUN mkdir -p /home/ubuntu/jenkins/workspace/Final/Shark-Secure-Pipeline/app/node_modules && chown -R node:node /home/ubuntu/jenkins/workspace/Final/Shark-Secure-Pipeline/app
 
-WORKDIR /home/node/app
+WORKDIR /home/ubuntu/jenkins/workspace/Final/Shark-Secure-Pipeline/app
 
 COPY package*.json ./
 
