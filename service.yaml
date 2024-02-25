@@ -1,13 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-shark
-
+  name: nodejs-image-demo-service
 spec:
   type: NodePort
-  ports:
-    - targetPort: 80
-      port: 80
-      nodePort: 30008
   selector:
-    app: shark
+    app: nodejs-image-demo
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+      nodePort: 30000
+
