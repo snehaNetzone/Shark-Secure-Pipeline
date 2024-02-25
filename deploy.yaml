@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: nodejs-image-demo-container
-        image: docker6767account/nodejs-image-demo:latest
+        image: docker6767account/devimage
         ports:
         - containerPort: 8080
