@@ -1,21 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: shark-deployment
-  labels:
-    app: shark
+  name: nodejs-image-demo-deployment
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
-      app: shark
+      app: nodejs-image-demo
   template:
     metadata:
       labels:
-        app: shark
+        app: nodejs-image-demo
     spec:
       containers:
-      - name: shark
-        image: docker6767/secureimage
+      - name: nodejs-image-demo-container
+        image: docker6767account/nodejs-image-demo:latest
         ports:
-        - containerPort: 80
+        - containerPort: 8080
